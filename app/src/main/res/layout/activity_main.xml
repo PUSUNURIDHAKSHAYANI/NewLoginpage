@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:id="@+id/name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email"
+        android:id="@+id/email"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:id="@+id/password"/>
+  <RadioGroup
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:id="@+id/radiog"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:orientation="horizontal">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:text="male"
+      android:id="@+id/rm"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"
+        android:id="@+id/rf"/>
+    </LinearLayout>
+  </RadioGroup>
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="date of birth"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+    android:id="@+id/dob"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin"
+        />
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="submit"
+    android:id="@+id/sb"
+    android:layout_gravity="center"/>
+</LinearLayout>
